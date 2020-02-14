@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Asap|Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1>
+      CALCULADORA <br />
+      De Martita
+    </h1>
+    <table id="calculadora">
+      <tr>
+        <td colspan="4"><span id="resultado"></span></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="button" onclick="add(7)">7</button></td>
+        <td>
+          <button type="button" name="button" onclick="add(8)">8</button>
+        </td>
+        <td>
+          <button type="button" name="button" onclick="add(9)">9</button>
+        </td>
+        <th>
+          <button type="button" name="button" onclick="add('/')">/</button>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" name="button" onclick="add(4)">4</button>
+        </td>
+        <td>
+          <button type="button" name="button" onclick="add(5)">5</button>
+        </td>
+        <td><button type="button" name="button" onclick="add(6)">6</button></td>
+        <th>
+          <button type="button" name="button" onclick="add('*')">*</button>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" name="button" onclick="add(1)">1</button>
+        </td>
+        <td>
+          <button type="button" name="button" onclick="add(2)">2</button>
+        </td>
+        <td>
+          <button type="button" name="button" onclick="add(3)">3</button>
+        </td>
+        <th>
+          <button type="button" name="button" onclick="add('-')">-</button>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" name="button" onclick="calcular()">=</button>
+        </td>
+        <td>
+          <button type="button" class="c" name="button" onclick="borrar()">
+            c
+          </button>
+        </td>
+        <td>
+          <button type="button" name="button" onclick="add(0)">0</button>
+        </td>
+        <th>
+          <button type="button" name="button" onclick="add('+')">+</button>
+        </th>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="assets/js/calculadora.js"></script>
+  </body>
+</html>
